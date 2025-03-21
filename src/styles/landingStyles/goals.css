@@ -1,0 +1,57 @@
+/* src/styles/landingComp/goals.css */
+
+.goals-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .goals-container h2 {
+    margin-bottom: 15px;
+    color: #fa3e5a;
+    font-size: 20px;
+    border-bottom: 1px solid #fa3e5a;
+    padding-bottom: 5px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #fa3e5a;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Radio Group Styling */
+  .radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .radio-option input, .checkbox-option input {
+    transform: scale(1.1);
+  }
+  

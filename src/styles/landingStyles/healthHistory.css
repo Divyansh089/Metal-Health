@@ -1,0 +1,49 @@
+/* src/styles/landingComp/healthHistory.css */
+
+.health-history-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .health-history-container h2 {
+    margin-bottom: 15px;
+    color: #fa3e5a;
+    font-size: 20px;
+    border-bottom: 1px solid #fa3e5a;
+    padding-bottom: 5px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #fa3e5a;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Specific styling for radio groups */
+  .radio-group label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  

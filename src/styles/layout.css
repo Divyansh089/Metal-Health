@@ -1,0 +1,19 @@
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* The body area (sidebar + content) below the top navbar */
+  .layout-body {
+    display: flex;
+    flex: 1;
+    margin-top: 60px; /* if top navbar is 60px tall */
+  }
+  
+  .layout-content {
+    flex: 1;
+    padding: 20px;
+    background: #fce4ec; /* example background color */
+  }
+  

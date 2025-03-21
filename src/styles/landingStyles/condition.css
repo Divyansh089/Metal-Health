@@ -1,0 +1,68 @@
+/* src/styles/landingComp/condition.css */
+.condition-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .condition-container label {
+    color: #fa3e5a;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .selected-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .selected-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: #feabb7;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .input-group {
+    margin-top: 15px;
+  }
+  
+  .input-group label {
+    color: #fa3e5a;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+/* Example snippet in condition.css */
+@media (max-width: 768px) {
+    .condition-container .input-field {
+      width: 100%;
+    }
+  }
+    

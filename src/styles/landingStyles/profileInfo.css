@@ -1,0 +1,32 @@
+/* src/styles/landingComp/profileInfo.css */
+
+.profile-info-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .profile-info-container h2 {
+    margin-bottom: 10px;
+    color: #fa3e5a;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #fa3e5a;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
