@@ -1,0 +1,29 @@
+.top-navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #feabb7; /* Set background color */
+  padding: 10px 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-navbar .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; /* White for contrast */
+}
+
+.top-navbar .nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}

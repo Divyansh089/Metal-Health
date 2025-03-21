@@ -1,0 +1,104 @@
+/* Base styles for the sidebar */
+.side-navbar {
+  position: fixed;
+  top: 60px; /* Below the top navbar */
+  left: 0;
+  height: calc(100vh - 60px);
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+/* Expanded state: full menu */
+.side-navbar.open {
+  width: 250px;
+}
+
+/* Collapsed state: slim menu */
+.side-navbar.closed {
+  width: 50px;
+}
+
+/* Header for toggle buttons */
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Close button (X) on the top right of expanded sidebar */
+.sidebar-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Hamburger button for collapsed sidebar */
+.sidebar-open {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Apply hover effect (bold black border) for all buttons */
+.sidebar-close:hover,
+.sidebar-open:hover {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+/* Sidebar links container */
+.side-links {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+/* Each list item */
+.side-links li {
+  margin-bottom: 15px;
+}
+
+/* Style for link and logout button */
+.side-links a,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+/* Icons styling inside links */
+.side-links a i,
+.logout-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Show text only when sidebar is expanded */
+.side-links a span,
+.logout-btn span {
+  display: inline-block;
+}
+
+/* Hover effect for navigation items */
+.side-links a:hover,
+.logout-btn:hover {
+  border: 2px solid black;
+}
+
+/* When sidebar is collapsed, center icons */
+.side-navbar.closed .side-links li {
+  display: flex;
+  justify-content: center;
+}

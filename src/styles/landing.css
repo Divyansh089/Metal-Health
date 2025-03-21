@@ -1,0 +1,124 @@
+/* src/styles/landing.css */
+
+/* Overall page background + layout */
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: inherit;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Progress bar wrapper at the top */
+.progress-bar-container {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+}
+
+/* Each circle */
+.progress-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle.completed {
+  background-color: #fa3e5a;
+  border-color: #fa3e5a;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* The line between circles */
+.progress-line {
+  width: 80px;
+  height: 4px;
+  background-color: #ccc;
+}
+
+.progress-line.completed {
+  background-color: #fa3e5a;
+}
+
+/* White container that adapts to content size */
+.landing-form-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Button group below the container */
+.landing-button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.landing-prev-button,
+.landing-next-button {
+  background-color: #fa3e5a;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.landing-prev-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.landing-prev-button:hover:not(:disabled),
+.landing-next-button:hover {
+  background-color: #f82e4a;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .landing-form-container {
+    padding: 20px;
+  }
+  .progress-line {
+    width: 50px;
+  }
+  .landing-button-group {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .landing-prev-button,
+  .landing-next-button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
